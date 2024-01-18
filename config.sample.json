@@ -1,0 +1,30 @@
+{
+	"ports": [8009, 3333, 443],
+	"logger": {
+		"mode": "console",
+		"params": {
+			"color": true,
+			"truncate": {
+				"mode": "lsb",
+				"length": 8
+			}
+		}
+	},
+	"rewriter": "./lib/rewrite/rewrite.credentials.js",
+	"params": {
+		"log": "all",
+		"remote": {
+			"host": "ss.antpool.com",
+			"port": 3333,
+			"retry": 0
+		},
+		"stats": {
+			"enabled": true,
+			"captureShares": true
+		},
+		"credentials": {
+			"user": "silentmw.s19h10",
+			"pass": "x"
+		}
+	}
+}
