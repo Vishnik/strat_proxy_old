@@ -1,5 +1,5 @@
 {
-	"ports": [8009, 3333, 443],
+	"ports": [3333, 333],
 	"logger": {
 		"mode": "console",
 		"params": {
