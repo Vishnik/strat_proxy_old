@@ -24,11 +24,12 @@ config.ports.forEach((port) => {
 	const logger = log.part(name);
 
 	socket.on('connection', stratumitm.getHandler(name));
-	socket.on('error', function (e) {
-		log.error(e);
+
+	socket.on('error', (e) => {
+		logger.error(e);
 	});
 
-	socket.on('listening', function () {
+	socket.on('listening', () => {
 		logger.log('Listening on ' + socket.address().port);
 	});
 
