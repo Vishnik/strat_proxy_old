@@ -23,5 +23,8 @@
   "homepage": "https://github.com/jabbany/StratuMITM#readme",
   "dependencies": {
     "colors": "^1.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.16"
   }
 }
